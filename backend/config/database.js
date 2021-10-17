@@ -8,8 +8,6 @@ const connectDatabase = () => {
         useUnifiedTopology: true,
     }).then((data) => {
         console.log(`Mongoose Connected with server: ${data.connection.host}`)
-    }).catch((err) => {
-        console.log(err)
     })
 }
 
